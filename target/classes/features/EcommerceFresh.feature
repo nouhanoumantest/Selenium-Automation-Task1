@@ -31,7 +31,7 @@ Feature: Frontend testing for Ecommerce Fresh.com
     And newly edited product is present
 
   #TC_EcommerceFresh_03 : Search for a Product Successfully
-  Scenario: Validate searching for a product successfully
+  Scenario Outline: Validate searching for a product successfully
     When user types search "<keyword>"
     Then product with the same "<keyword>" will appear
     Examples:
